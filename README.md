@@ -4,13 +4,14 @@ For this project, the most important thing is to access the Excel files stored i
 
 Within Azure Data Factory, the first step is to create a Python file that allows reading files from SharePoint using the following code:
 
+
+
+```python
 from office365.runtime.auth.authentication_context import AuthenticationContext
 from office365.sharepoint.client_context import ClientContext
 from office365.sharepoint.files.file import File
 import pandas as pd
 
-
-```python
 URL = 'https://sharepoint.com/sites/Site_Name' #Your Site Name
 USUARIO = 'User_Name' #Your user name
 PASSWORD = 'Password' #Your password
